@@ -50,9 +50,9 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
 }
-
-/* class seletor */
-
+ /* 
+ class seletor
+  */
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);

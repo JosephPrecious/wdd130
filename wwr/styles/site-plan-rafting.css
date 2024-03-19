@@ -13,10 +13,10 @@ body {
     --heading-font: 'Montserrat', Sans-serif;
     --paragraph-font: 'lato',Sans-serif;
 
-    --nav-background-color:#9C6654;
+    --nav-background-color:#eee;
     --nav-link-color: rgb(0, 0, 0);
     --nav-hover-link-color: #032cf5;
-    --nav-hover-backgound-color: steelblue;
+    --nav-hover-backgound-color: rgb(212, 225, 236);
 }
 
 h1,h2,h3,h4,h5,h6 {

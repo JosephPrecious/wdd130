@@ -9,17 +9,20 @@ main {
 }
 aside {
     width: 20em;
-    margin: 1em;
+    text-align: center;
+    /* margin: 1em; */
+    position: relative;
 }
 aside img {
     width: 200px;
-    text-align: center;
-    position: relative;
+    height: auto;
+    /* text-align: center;
+    position: relative; */
 }
 aside h2 {
-    position: relative;
-    top: auto;
-    left: 50px;
+    position: absolute;
+    top: 10px;
+    left:80px;
 }
 nav {
     background-color: steelblue;
@@ -50,7 +53,9 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
 }
+
         /* class seletor */
+
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);

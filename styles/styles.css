@@ -7,8 +7,8 @@ main {
     margin: 1rem;
     grid-column: 2/3;
 } 
-.grid, header, footer{
-    margin: auto;
+header, .grid, footer{
+    margin: 0 auto;
     max-width: 840px;
 }
 

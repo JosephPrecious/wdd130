@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
+
 :root {
     --primary-color: #1E3A5F;
     --secondry-color: #9C6654;
@@ -18,31 +14,58 @@ body {
     --nav-hover-link-color: #032cf5;
     --nav-hover-backgound-color: rgb(212, 225, 236);
 }
-
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-header {
-    padding: 20px;
-    background-color: var(--ancent1-color);
-}
-nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
-    display: flex;
-}
-nav a {
-    display: block;
+header{
+    font-size: 1.5rem;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 1rem;
+    padding: 1.5rem;
 }
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-}
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-backgound-color);
-}
+.social-link {
+    text-decoration: none;
+  } 
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .hero {
+    position: relative;
+    width: 100%;
+  }
+  
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
+  .hero h1 {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.177);
+    width: 100em;
+    position: absolute;
+    top: 30px;
+    left: 50px  ;
+    color:#000;
+  }
+
+  .hero article {
+    position: absolute;
+    bottom: 50px; 
+    left: 600px; 
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px; 
+  }
+  
+  .hero article p img {
+    float: left;
+    margin-left: 2px;
+  }
+
+  footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+}

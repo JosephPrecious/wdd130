@@ -3,15 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 main {
+    /* max-width: 1200px; */
+    margin: 1rem;
+    /* padding: 0 20px; */
+    grid-column: 2/3;
+} 
+header,.grid, footer{
     max-width: 840px;
+    margin: 0 auto;
 }
 aside {
     width: 20em;
-    text-align: center;
+    /* text-align: center; */
     /* margin: 1em; */
     position: relative;
+    grid-row: 1/2;
+    grid-column: 1/2;   
 }
 aside img {
     width: 200px;
@@ -27,6 +35,13 @@ aside h2 {
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size:larger;
+}
+.social-link{
+    text-decoration: none;
 }
 nav a {
     color: white;
@@ -35,6 +50,7 @@ nav a {
 }
 h1 {
     color: steelblue;
+    border-bottom: 2px solid #000;
 }
 main img {
     float: right;
@@ -51,7 +67,7 @@ p {
 }
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 2px solid #000;
 }
 
         /* class seletor */
@@ -65,4 +81,8 @@ footer {
 }
 .indent {
     padding-left: 2rem;
+}
+.grid{
+    display: grid;
+    align-items: center;
 }

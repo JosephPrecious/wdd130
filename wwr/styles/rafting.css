@@ -2,8 +2,8 @@
 
 :root {
     --primary-color: #1E3A5F;
-    --secondry-color: #9C6654;
-    --ancent1-color: #B4B4B4;
+    --secondary-color: #9C6654;
+    --accent1-color: #B4B4B4;
     --accent2-color: #FF6F61; 
 
     --heading-font: 'Montserrat', Sans-serif;
@@ -16,56 +16,161 @@
 }
 h1,h2,h3 {
     font-family: var(--heading-font);
+    font-size: 2rem;
     color: var(--primary-color);
 }
 header{
-    font-size: 1.5rem;
-    color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 1.5rem;
+   background-color: var(--accent1-color);
+   color: white;
+   padding: 10px;
+   border-bottom: 1px solid #000;
 }
-.social-link {
-    text-decoration: none;
-  } 
+
+
 body {
     max-width: 1100px;
     margin: 0 auto;
+    padding: 10px;
+    font-size: 1.5rem;
   }
   .hero {
     position: relative;
     width: 100%;
-  }
-  
-  .hero img {
-    display: block;
+    height: auto;
+}
+
+.hero img {
+    display: flex;
     width: 100%;
     height: auto;
-  }
+    padding: 10px;
+}
 
-  .hero h1 {
-    display: block;
-    background-color: rgba(255, 255, 255, 0.177);
-    width: 100em;
+.hero h1 {
     position: absolute;
-    top: 30px;
-    left: 50px  ;
-    color:#000;
-  }
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.401);
+    padding:  10px 20px;
+}
 
-  .hero article {
+.hero article {
     position: absolute;
-    bottom: 50px; 
-    left: 600px; 
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px; 
-  }
-  
-  .hero article p img {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.401); 
+    padding: 10px;
+    max-width: 50%; 
+}
+
+.hero article img {
     float: left;
-    margin-left: 2px;
+    margin-right: 30px; 
+}
+
+ footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding: 10px;
+    border-top: 1px solid #000;
+ }
+
+ footer p {
+  text-align: center;
+ }
+
+ .sociallinks{
+  display: flex;
+ }
+
+ .header-grid {
+  display: grid;
+  grid-template-columns: 5fr 3fr 1fr; 
+  align-items: center;
+ }
+
+ .logo img {
+	margin: 20px;
+	width: 180px;
+	height: auto;
+ }
+
+ nav {
+  display: flex;
+  align-items: center;
+	text-align: right;
   }
 
-  footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+ .navigation {
+	display: flex;
+	list-style: none;
+ }
+
+ .navigation li {
+	flex: 1 1 100%;
+ }
+
+ .navigation a {
+	display: block;
+	color: var(--nav-link-color);
+	padding: 10px 20px;
+	text-decoration: none;
+ }
+
+ .navigation a:hover {
+  font-weight: 700;
+  text-decoration: none;
+ }
+
+ .history-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  padding: 100px;
+}
+
+.history-section h2 {
+  color: var(--primary-color);
+}
+
+.history-section p {
+  margin-top: 10px;
+  color: var(--nav-link-color);
+}
+.adventures-section {
+  padding: 20px;
+}
+
+.adventures-section h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  text-align: center; /* Center the heading */
+  padding: 20px;
+}
+
+.adventure-images {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 20px; 
+}
+
+.adventure-images figure {
+  text-align: center; 
+  flex-wrap: wrap; 
+}
+
+.adventure-images img {
+  width: 100%; 
+  height: auto; 
+  padding: 10px;
+}
+
+.adventure-images figcaption {
+  color: var(--nav-link-color);
+  margin-top: 50px;
 }

@@ -202,7 +202,7 @@ nav a {
 }
 
 .employee-profiles h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -231,69 +231,60 @@ nav a {
 }
 
 /* Contact Form Section */
-.contact-form {
+/* Form container */
+form {
   padding: 40px;
+  border: 1px solid #ccc;
   background-color: var(--accent1-color);
-  border-radius: 10px;
+  border-radius: 8px;
 }
+
 
 .contact-form h2 {
   color: var(--primary-color);
   text-align: center;
   margin-bottom: 30px;
+  font-size: larger;
+}
+/* Form labels */
+label {
+  display: block;
+  margin-bottom: 1px;
 }
 
-.contact-form form {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-}
-
-.contact-form label {
-  color: var(--nav-link-color);
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form select,
-.contact-form textarea {
+/* Form inputs */
+input[type="text"],
+input[type="email"],
+textarea {
   width: 100%;
   padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-form select {
-  appearance: none;
-  padding: 10px 20px;
-  background-color: #fff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-.contact-form label.checkbox {
-  display:block;
-  margin-top: 10px;
-}
-
-.contact-form button[type="submit"] {
-  padding: 10px 20px;
-  background-color: var(--nav-hover-link-color);
-  color: white;
-  border: none;
+  margin-bottom: 10px;
   border-radius: 10px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
 
-.contact-form button[type="submit"]:hover {
-  background-color: var(--secondary-color);
-  color: #000;
-  }
+/* Radio buttons */
+input[type="radio"] {
+  margin-right: 50px;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: var(--accent2-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Submit button on hover */
+input[type="submit"]:hover {
+  background-color: var(--nav-hover-link-color);
+}

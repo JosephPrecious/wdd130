@@ -32,6 +32,10 @@ body {
     font-size: 2rem;
     font-family: var(--paragraph-font);
     color: var(--text-color);
+    background-image: url('background.webp');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
 }
 
 .hero {
@@ -57,7 +61,7 @@ body {
   color: white;
   background-color: var(--primary-color);
   font-size: 4.5rem; 
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
   
 .hero article {
